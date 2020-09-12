@@ -1,0 +1,27 @@
+{
+  "name": "origin-node",
+  "version": "0.0.1",
+  "description": "Classes for controlling OriginLab instances using the OLE / COM interface",
+  "main": "Origin.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nVentis/origin-node.git"
+  },
+  "keywords": [
+    "OriginLab",
+    "Science",
+    "Physics"
+  ],
+  "author": "Bryan Bliewert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nVentis/origin-node/issues"
+  },
+  "homepage": "https://github.com/nVentis/origin-node#readme",
+  "dependencies": {
+    "winax": "^1.20.0"
+  }
+}
