@@ -11,11 +11,12 @@
     "url": "git+https://github.com/nVentis/origin-node.git"
   },
   "keywords": [
-    "OriginLab",
-    "Science",
-    "Physics"
+    "originlab",
+    "origin",
+    "science",
+    "physics"
   ],
-  "author": "Bryan Bliewert",
+  "author": "Bryan Bliewert <bryan.bliewert@nventis.eu>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nVentis/origin-node/issues"
