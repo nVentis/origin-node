@@ -30,42 +30,44 @@ if (worksheet) {
 ```
 
 ## Getters & Setters
-Async getters (a.k.a. `await worksheet.LongName`) are used, but as async setters are not supported, separate methods for setters are added using `${propertyName}Set` as naming scheme.
+To keep the wrappers independent of the underlying OLE library, the decision was made to use async functions as consistently as possible.
+
+However, while async getters (a.k.a. `await worksheet.LongName`) are possible in JavaScript, there is no such syntax for async setters. Therefore, separate methods for setters are added using `${propertyName}Set` as naming scheme.
 
 Example usage: `await Worksheet.${propertyName}Set (newValue)`.
 
 # Status
 Certain array-like structures will not be implemented and are skipped from the following list (e.g. `WorksheetPages`).
 
-## Being implemented
+## Partly implemented
 - Application
-- ApplicationSI
 - ApplicationCOMSI
-- Layer
-- OriginBase
-- OriginObject
-- Worksheet
-## Pending
-- CollectionsBase
-- Column
+- ApplicationSI
 - DataObject
 - DataObjectBase
 - DataPlot
-- DataRange
 - Datasheet
-- ExternalDialogPage
-- Folder
+- Column
 - GraphLayer
 - GraphPage
 - LayoutPage
-- MatrixObject
+- Layer
 - MatrixPage
-- MatrixSheet
-- Note
+- OriginBase (missing Parent)
+- TreeNode
+- Worksheet
+- WorksheetPage
 - Page
 - PageBase
+## Pending
+- CollectionsBase
+- DataRange
+- ExternalDialogPage
+- Folder
+- MatrixObject
+- MatrixSheet
+- Note
 - ProjectInfo
+# Completed
+- OriginObject
 - TreeNode
-- WorksheetPage
-# Finished
-- None
