@@ -12,7 +12,7 @@ Type conversion will be handled by `winax` most of the time; unless otherwise st
 # Getting started
 The main entry point for manipulating OriginLab is the `Application` class, or more importantly, the inheriting classes `ApplicationSI` (using a running OriginLab instance) and `ApplicationCOMSI` (using a newly created instance).  
 
-Following code illustrates usage for searching a worksheet by `LongName`
+Following code illustrates usage for searching a worksheet by `LongName` and updating the formula for the second column
 
 ```
 import {ApplicationSI} from "origin-node";
